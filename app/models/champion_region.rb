@@ -1,0 +1,2 @@
+class ChampionRegion < ApplicationRecord
+end
