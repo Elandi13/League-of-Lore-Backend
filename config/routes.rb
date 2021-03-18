@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
   resources :champion_regions
-  resources :regions
+  # resources :regions
   resources :user_stories
   resources :favorites
   # resources :champions
-  resources :users
+  # resources :users
+
+
+  ###users
+  post "/login", to: "users#login"
+  get "/me", to: "users#show" 
+  patch "me", to: "user#update"
   
 
   ###champions 
@@ -13,4 +19,10 @@ Rails.application.routes.draw do
   get "/champions/:id", to: "champions#show"
   patch "/champions/:id", to: "champions#update"
   delete "/champions/:id", to: "champions#destroy"
+
+
+  ###regions
+  get "/regions", to:"regions#index"
+  post "/regions", to:"regions#create"
+  get "/regions/:id", to: "regions#show"
 end
