@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   ###users
   post "/login", to: "users#login"
   get "/me", to: "users#show" 
-  patch "me", to: "user#update"
+  # patch "me", to: "user#update"
   
 
   ###champions 
@@ -25,4 +25,13 @@ Rails.application.routes.draw do
   get "/regions", to:"regions#index"
   post "/regions", to:"regions#create"
   get "/regions/:id", to: "regions#show"
+
+
+  ###Stories
+
+  get "/user_stories", to: "user_stories#index"
+  post "/user_stories", to: "user_stories#create"
+  get "/user_stories/:id", to: "user_stories#show"
+  patch "/user_stories/:id", to: "user_stories#update"
+  delete "/user_stories", to: "user_stories#destroy"
 end
