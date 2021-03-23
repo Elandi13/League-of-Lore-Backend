@@ -17,8 +17,8 @@ class ChampionsController < ApplicationController
 
     def update 
         champion = Champion.find(params[:id])
-               champion.update(champion_params)
-               render json: champion
+            champion.update(champion_params)
+        render json: champion
     end
 
     def show 

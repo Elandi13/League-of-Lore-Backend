@@ -27,11 +27,11 @@ Rails.application.routes.draw do
   get "/regions/:id", to: "regions#show"
 
 
-  ###Stories
+  ###UserStories
 
-  get "/user_stories", to: "user_stories#index"
-  post "/user_stories", to: "user_stories#create"
-  get "/user_stories/:id", to: "user_stories#show"
+  # get "/user_stories", to: "user_stories#index"
+  # post "/user_stories", to: "user_stories#create"
+  # get "/user_stories/:id", to: "user_stories#show"
   patch "/user_stories/:id", to: "user_stories#update"
   delete "/user_stories", to: "user_stories#destroy"
 end
