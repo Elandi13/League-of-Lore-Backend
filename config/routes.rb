@@ -34,4 +34,8 @@ Rails.application.routes.draw do
   # get "/user_stories/:id", to: "user_stories#show"
   patch "/user_stories/:id", to: "user_stories#update"
   delete "/user_stories", to: "user_stories#destroy"
+
+
+  ###ChampionRegions
+  ##used resources
 end

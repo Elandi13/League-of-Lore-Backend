@@ -4,9 +4,15 @@
 Champion.destroy_all
 Champion.reset_pk_sequence
 
+Region.destroy_all
+Region.reset_pk_sequence
+
 
 UserStory.destroy_all
 UserStory.reset_pk_sequence
+
+ChampionRegion.destroy_all
+ChampionRegion.reset_pk_sequence
 
 
 ###Users
@@ -269,7 +275,255 @@ ekko = Champion.create(
     background: "https://lolstatic-a.akamaihd.net/frontpage/apps/prod/piltover/en_US/0d65273e55685b53b82f4f0ead52fc167a27f911/assets/img/share/zaun_1200x630.jpg"
 )
 
+elise = Champion.create(
+    name: "Elise",
+    title: "The Spider Queen",
+    bio: "Elise is a deadly predator who dwells in a shuttered, lightless palace, deep within the oldest city of Noxus. She was once the mistress of a powerful noble house, until the bite of a vile spider-god transformed her into something utterly inhuman, yet still beautiful—an arachnoid creature, drawing unsuspecting prey into her web. Elise now feeds upon the naive and the faithless, and there are few who can resist her seductions.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg",
+    faction: "Shadow Isles",
+    clip: "https://www.youtube.com/embed/mOz4uDKs2dM",
+    background:"https://i.imgur.com/DWOCTtW.jpg"
+)
 
+evelynn = Champion.create(
+    name: "Evelynn", 
+    title: "Agony's Embrace",
+    bio: "Within the dark seams of Runeterra, the demon Evelynn searches for her next victim. She lures in prey with the voluptuous façade of a human female, but once a person succumbs to her charms, Evelynn's true form is unleashed. She then subjects her victim to unspeakable torment, gratifying herself with their pain. To the demon, these liaisons are innocent flings. To the rest of Runeterra, they are ghoulish tales of lust gone awry and horrific reminders of the cost of wanton desire.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
+    faction: "Runeterra",
+    clip: "https://www.youtube.com/embed/ep_U4U6YW4E",
+    background: "https://media2.giphy.com/media/0jvcvqLFDmb2TFgGWA/giphy.gif"
+)
+
+ezreal = Champion.create(
+    name: "Ezreal",
+    title: "The Prodigal Explorer",
+    bio: "A dashing adventurer, unknowingly gifted in the magical arts, Ezreal raids long-lost catacombs, tangles with ancient curses, and overcomes seemingly impossible odds with ease. His courage and bravado knowing no bounds, he prefers to improvise his way out of any situation, relying partially on his wits, but mostly on his mystical Shuriman gauntlet, which he uses to unleash devastating arcane blasts. One thing is for sure—whenever Ezreal is around, trouble isn't too far behind. Or ahead. Probably everywhere.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
+    faction: "Piltover",
+    clip: "https://www.youtube.com/embed/3EElFyFcaEk",
+    background:"https://media4.giphy.com/media/hp3IRVIP3vbJJvFC0o/giphy.gif"
+)
+
+fiddlesticks = Champion.create(
+    name: "FiddleSticks",
+    title: "The Ancient Fear",
+    bio: "Something has awoken in Runeterra. Something ancient. Something terrible. The ageless horror known as Fiddlesticks stalks the edges of mortal society, drawn to areas thick with paranoia where it feeds upon terrorized victims. Wielding a jagged scythe, the haggard, makeshift creature reaps fear itself, shattering the minds of those unlucky enough to survive in its wake. Beware the sounding of the crow, or the whispering of the shape that appears <i>almost</i> human… Fiddlesticks has returned.",
+    image: "https://cdn.vox-cdn.com/thumbor/v3EQj6RqLCCkw6YL1NYFhNIK2K8=/0x0:5000x2940/1200x800/filters:focal(1921x975:2721x1775)/cdn.vox-cdn.com/uploads/chorus_image/image/66501544/_Base.0.jpg",
+    faction: "Runeterra",
+    clip: "https://www.youtube.com/embed/S6r5TwgDL4Q",
+    background: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg"
+)
+
+fiora = Champion.create(
+    name: "Fiora",
+    title: "The Grand Duelist",
+    bio: "The most feared duelist in all Valoran, Fiora is as renowned for her brusque manner and cunning mind as she is for the speed of her bluesteel rapier. Born to House Laurent in the kingdom of Demacia, Fiora took control of the family from her father in the wake of a scandal that nearly destroyed them. House Laurent's reputation was sundered, but Fiora bends her every effort to restore her family's honor and return them to their rightful place among the great and good of Demacia.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg",
+    faction: "Demacia",
+    clip: "https://www.youtube.com/embed/4XF86nKqQXs",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/demacia_splash.jpg"
+)
+
+fizz = Champion.create(
+    name: "Fizz",
+    title: "The Tidal Trickster",
+    bio: "Fizz is an amphibious yordle, who dwells among the reefs surrounding Bilgewater. He often retrieves and returns the tithes cast into the sea by superstitious captains, but even the saltiest of sailors know better than to cross him—for many are the tales of those who have underestimated this slippery character. Often mistaken for some manner of capricious ocean spirit, he seems able to command the beasts of the deep, and delights in confounding his allies and enemies alike.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
+    faction: "Runeterra",
+    clip: "https://www.youtube.com/embed/TCvfve-3ANQ",
+    background: "https://i.imgur.com/i0siM4i.gif"
+)
+
+galio = Champion.create(
+    name: "Galio",
+    title: "The Colossus",
+    bio: "Outside the gleaming city of Demacia, the stone colossus Galio keeps vigilant watch. Built as a bulwark against enemy mages, he often stands motionless for decades until the presence of powerful magic stirs him to life. Once activated, Galio makes the most of his time, savoring the thrill of a fight and the rare honor of defending his countrymen. But his triumphs are always bittersweet, for the magic he destroys is also his source of reanimation, and each victory leaves him dormant once again.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg",
+    faction: "Demacia",
+    clip: "https://www.youtube.com/embed/t3BFQMW2Lfw",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/demacia_splash.jpg"
+)
+
+gangplank = Champion.create(
+    name: "GangPlank", 
+    title: "The Saltwater Scourge",
+    bio: "As unpredictable as he is brutal, the dethroned reaver king Gangplank is feared far and wide. Once, he ruled the port city of Bilgewater, and while his reign is over, there are those who believe this has only made him more dangerous. Gangplank would see Bilgewater bathed in blood once more before letting someone else take it—and now with pistol, cutlass, and barrels of gunpowder, he is determined to reclaim what he has lost.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg",
+    faction: "Bilgewater",
+    clip: "https://www.youtube.com/embed/3kysDbC-NTo",
+    background: "https://thumbs.gfycat.com/AccurateObedientHochstettersfrog-small.gif"
+)
+
+garen = Champion.create(
+    name: "Garen",
+    title: "The Might of Demacia",
+    bio: "A proud and noble warrior, Garen fights as one of the Dauntless Vanguard. He is popular among his fellows, and respected well enough by his enemies—not least as a scion of the prestigious Crownguard family, entrusted with defending Demacia and its ideals. Clad in magic-resistant armor and bearing a mighty broadsword, Garen stands ready to confront mages and sorcerers on the field of battle, in a veritable whirlwind of righteous steel.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg",
+    faction: "Demacia",
+    clip: "https://www.youtube.com/embed/Q7oyW6LjxrA",
+    background: "https://media2.giphy.com/media/fvxUIwNJRaj8UQe3ti/giphy.gif"
+)
+
+gnar = Champion.create(
+    name: "Gnar",
+    title: "The Missing Link",
+    bio: "Gnar is a primeval yordle whose playful antics can erupt into a toddler's outrage in an instant, transforming him into a massive beast bent on destruction. Frozen in True Ice for millennia, the curious creature broke free and now hops about a changed world he sees as exotic and wondrous. Delighted by danger, Gnar flings whatever he can at his enemies, be it his bonetooth boomerang, or a nearby building.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
+    faction: "Freljord",
+    clip: "https://www.youtube.com/embed/4Qu3rhWGq0s",
+    background: "https://am-a.akamaihd.net/image?f=https%3A%2F%2Funiverse-meeps.leagueoflegends.com%2Fv1%2Fassets%2Fimages%2Fionia-the-placidium-of-navori.jpg&resize=:1200"
+)
+
+gragas = Champion.create(
+    name: "Gragas",
+    title: "The Rabble Rouser",
+    bio: "Equal parts jolly and imposing, Gragas is a massive, rowdy brewmaster on his own quest for the perfect pint of ale. Hailing from parts unknown, he now searches for rare ingredients among the unblemished wastes of the Freljord, trying each recipe as he goes. Often intoxicated and extremely impulsive, he is legendary for the brawls he starts, which often end in all-night parties and widespread property damage. Any appearance from Gragas must surely foreshadow drinking and destruction—in that order.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
+    faction: "Freljord",
+    clip: "https://www.youtube.com/embed/G9uXVi2DnZA",
+    background: "https://am-a.akamaihd.net/image?f=https%3A%2F%2Funiverse-meeps.leagueoflegends.com%2Fv1%2Fassets%2Fimages%2Fionia-the-placidium-of-navori.jpg&resize=:1200"
+)
+
+graves = Champion.create(
+    name: "Graves", 
+    title: "The Outlaw",
+    bio: "Malcolm Graves is a renowned mercenary, gambler, and thief—a wanted man in every city and empire he has visited. Even though he has an explosive temper, he possesses a strict sense of criminal honor, often enforced at the business end of his double-barreled shotgun Destiny. In recent years, he has reconciled a troubled partnership with Twisted Fate, and together they have prospered once more in the turmoil of Bilgewater's criminal underbelly.",
+    image: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5796e3d258e95471/5e83cb29cfad926479634951/Graves_00_Base-Cigar.jpg",
+    faction: "Bilgewater",
+    clip: "https://www.youtube.com/embed/BWzyB4xe7Y8",
+    background: "https://thumbs.gfycat.com/DemandingVengefulAmericanmarten-max-1mb.gif"
+)
+
+hecarim = Champion.create(
+    name: "Hecarim",
+    title: "The Shadow of War",
+    bio: "Hecarim is a spectral fusion of man and beast, cursed to ride down the souls of the living for all eternity. When the Blessed Isles fell into shadow, this proud knight was obliterated by the destructive energies of the Ruination, along with all his cavalry and their mounts. Now, whenever the Black Mist reaches out across Runeterra, he leads their devastating charge, reveling in the slaughter and crushing the foe beneath his armored hooves.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
+    faction: "Shadow Isles",
+    clip: "https://www.youtube.com/embed/6DVGJm-u6To",
+    background: "https://i.imgur.com/DWOCTtW.jpg"
+)
+
+heimerdinger = Champion.create(
+    name: "Heimerdinger", 
+    title: "The Revered Inventor",
+    bio: "A brilliant yet eccentric yordle scientist, Professor Cecil B. Heimerdinger is one of the most innovative and esteemed inventors Piltover has ever known. Relentless in his work to the point of neurotic obsession, he thrives on answering the universe's most impenetrable questions. Though his theories often appear opaque and esoteric, Heimerdinger has crafted some of Piltover's most miraculous—not to mention lethal—machinery, and constantly tinkers with his inventions to make them even more efficient.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
+    faction: "Piltover",
+    clip: "https://www.youtube.com/embed/YIKlaq2wBqA",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/piltover_splash.jpg"
+)
+
+illaoi = Champion.create(
+    name: "Illaoi",
+    title: "The Kraken Priestess",
+    bio: "Illaoi's powerful physique is dwarfed only by her indomitable faith. As the prophet of the Great Kraken, she uses a huge, golden idol to rip her foes' spirits from their bodies and shatter their perception of reality. All who challenge the “Truth Bearer of Nagakabouros” soon discover Illaoi never battles alone—the god of the Serpent Isles fights by her side.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg",
+    faction: "Bilgewater",
+    clip: "https://www.youtube.com/embed/UFkCDRlb9FA",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/bilgewater_splash.jpg"
+)
+
+irelia = Champion.create(
+    name: "Irelia",
+    title: "The Blade Dancer",
+    bio: "The Noxian occupation of Ionia produced many heroes, none more unlikely than young Irelia of Navori. Trained in the ancient dances of her province, she adapted her art for war, using the graceful and carefully practised movements to levitate a host of deadly blades. After proving herself as a fighter, she was thrust into the role of resistance leader and figurehead, and to this day remains dedicated to the preservation of her homeland.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/SGxQAs9ULWY",
+    background: "https://3.bp.blogspot.com/-0bWld6yyAlI/WsI_ztESdvI/AAAAAAAA8fw/WCxT2s5V9UghguP8IKA5NlNcwfTAmmm7gCLcBGAs/s1600/1.jpg"
+)
+
+ivern = Champion.create(
+    name: "Ivern",
+    title: "The Green Father",
+    bio: "Ivern Bramblefoot, known to many as the Green Father, is a peculiar half man, half tree who roams Runeterra's forests, cultivating life everywhere he goes. He knows the secrets of the natural world, and holds deep friendships with all things that grow, fly, and scuttle. Ivern wanders the wilderness, imparting strange wisdom to any he meets, enriching the forests, and occasionally entrusting loose-lipped butterflies with his secrets.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/Y-gsY5oAsL0",
+    background: "https://3.bp.blogspot.com/-0bWld6yyAlI/WsI_ztESdvI/AAAAAAAA8fw/WCxT2s5V9UghguP8IKA5NlNcwfTAmmm7gCLcBGAs/s1600/1.jpg"   
+)
+
+janna = Champion.create(
+    name: "Janna",
+    title: "The Storm's Fury",
+    bio: "Armed with the power of Runeterra's gales, Janna is a mysterious, elemental wind spirit who protects the dispossessed of Zaun. Some believe she was brought into existence by the pleas of Runeterra's sailors who prayed for fair winds as they navigated treacherous waters and braved rough tempests. Her favor and protection has since been called into the depths of Zaun, where Janna has become a beacon of hope to those in need. No one knows where or when she will appear, but more often than not, she's come to help.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg",
+    faction: "Zaun",
+    clip: "https://www.youtube.com/embed/tlHpXy_VNpE",
+    background: "https://lolstatic-a.akamaihd.net/frontpage/apps/prod/piltover/en_US/0d65273e55685b53b82f4f0ead52fc167a27f911/assets/img/share/zaun_1200x630.jpg"
+)
+
+jarven = Champion.create(
+    name: "Jarvan IV",
+    title: "The Exemplar of Demacia",
+    bio: "Prince Jarvan, scion of the Lightshield dynasty, is heir apparent to the throne of Demacia. Raised to be a paragon of his nation's greatest virtues, he is forced to balance the heavy expectations placed upon him with his own desire to fight on the front lines. Jarvan inspires his troops with his fearsome courage and selfless determination, raising his family's colors high and revealing his true strength as a future leader of his people.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg",
+    faction: "Demacia",
+    clip: "https://www.youtube.com/embed/RgOdf3x24qA",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/demacia_splash.jpg"
+)
+
+jax = Champion.create(
+    name: "Jax",
+    title: "Grandmaster At Arms",
+    bio: "Unmatched in both his skill with unique armaments and his biting sarcasm, Jax is the last known weapons master of Icathia. After his homeland was laid low by its own hubris in unleashing the Void, Jax and his kind vowed to protect what little remained. As magic now rises in the world, this slumbering threat stirs once more, and Jax roams Valoran, wielding the last light of Icathia and testing all warriors he meets to see if any are strong enough to stand beside him...",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg",
+    faction: "Runeterra",
+    clip: "https://www.youtube.com/embed/B18qApcVCRg",
+    background:"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg"
+)
+
+jayce = Champion.create(
+    name: "Jayce",
+    title: "The Defender of Tomorrow",
+    bio: "Jayce is a brilliant inventor who has pledged his life to the defense of Piltover and its unyielding pursuit of progress. With his transforming hextech hammer in hand, Jayce uses his strength, courage, and considerable intelligence to protect his hometown. While revered throughout the city as a hero, he hasn't taken well to the attention heroism brings. Still, Jayce's heart is in the right place, and even those who envy his natural skills are grateful for his protection in the City of Progress.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg",
+    faction: "Piltover",
+    clip: "https://www.youtube.com/embed/p2YuyBZ_zMU",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/piltover_splash.jpg"
+)
+
+jhin = Champion.create(
+    name: "Jhin",
+    title: "The Virtuoso",
+    bio: "Jhin is a meticulous criminal psychopath who believes murder is art. Once an Ionian prisoner, but freed by shadowy elements within Ionia's ruling council, the serial killer now works as their cabal's assassin. Using his gun as his paintbrush, Jhin creates works of artistic brutality, horrifying victims and onlookers. He gains a cruel pleasure from putting on his gruesome theater, making him the ideal choice to send the most powerful of messages: terror.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/QvNw0A-D0T0",
+    background: "https://3.bp.blogspot.com/-0bWld6yyAlI/WsI_ztESdvI/AAAAAAAA8fw/WCxT2s5V9UghguP8IKA5NlNcwfTAmmm7gCLcBGAs/s1600/1.jpg"
+)
+
+jinx = Champion.create(
+    name: "Jinx",
+    title: "The Loose Cannon",
+    bio: "A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom, and gleefully brings her own chaotic brand of pandemonium wherever she goes.",
+    image:"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
+    faction: "Zaun",
+    clip: "https://www.youtube.com/embed/KN3OYwP8nHE",
+    background: "https://lolstatic-a.akamaihd.net/frontpage/apps/prod/piltover/en_US/0d65273e55685b53b82f4f0ead52fc167a27f911/assets/img/share/zaun_1200x630.jpg"
+)
+
+kai = Champion.create(
+    name: "Kai'Sa",
+    title: "Daughter of The Void",
+    bio:"Claimed by the Void when she was only a child, Kai'Sa managed to survive through sheer tenacity and strength of will. Her experiences have made her a deadly hunter and, to some, the harbinger of a future they would rather not live to see. Having entered into an uneasy symbiosis with a living Void carapace, the time will soon come when she must decide whether to forgive those mortals who would call her a monster, and defeat the coming darkness together… or simply to forget, as the Void consumes the world that left her behind.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg",
+    faction: "The Void",
+    clip: "https://www.youtube.com/embed/yLNMZt3FvFo",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/void-an-unknowable-power.jpg"
+)
+
+kalista = Champion.create(
+    name: "Kalista",
+    title: "The Spear of Vengeance",
+    bio: "A specter of wrath and retribution, Kalista is the undying spirit of vengeance, an armored nightmare summoned from the Shadow Isles to hunt deceivers and traitors. The betrayed may cry out in blood to be avenged, but Kalista only answers those willing to pay with their very souls. Those who become the focus of Kalista's wrath should make their final peace, for any pact sealed with this grim hunter can only end with the cold, piercing fire of her soul-spears.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg",
+    faction: "Shadow Isles",
+    clip: "https://www.youtube.com/embed/XCR-tMpKtt8",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/shadow-isles_splash.jpg"
+)
 
 ####Regions 
 
@@ -418,6 +672,13 @@ zaun = Region.create(
     background:"https://steamuserimages-a.akamaihd.net/ugc/787480374921350334/DFF4DD837C7C3F054EACFDD008CE200AA8987531/"
 )
 
+runeterra = Region.create(
+    name: "Runeterra",
+    image: "https://cdn.vox-cdn.com/thumbor/ILvJLdwMMYglUfQnkp2_cdP3kY0=/0x0:1775x931/1200x800/filters:focal(746x324:1030x608)/cdn.vox-cdn.com/uploads/chorus_image/image/60472511/chrome_2018_07_24_11_40_50.0.jpg",
+    summary:"Composed of both the material and spirit realms, Runeterra is all that separates the celestial powers of creation from the abyssal threat of all undoing. This is a magical world unlike any other-inhabited by peoples both fierce and wondrous.",
+    background: "https://i.imgur.com/i0siM4i.gif"
+)
+
 
 ###UserStories
 
@@ -433,3 +694,77 @@ story2 = UserStory.create(
     champion_id: 2, 
     story: "this is ahri's story"
 )
+
+
+
+###ChampionRegions 
+
+###Ionia
+ionian_array = [ahri, akali, irelia, ivern, jhin]
+ionian_array.each{|ionian| ChampionRegion.create(
+    region_id: ionia.id,
+    champion_id: ionian.id
+)}
+
+###Runeterra
+runterrans_array =[aatrox, alistar, annie, aurelion_sol, bard, evelynn, fiddlesticks, fizz, jax]
+runterrans_array.each{|runeterran| ChampionRegion.create(
+    region_id: runeterra.id,
+    champion_id: runeterran.id
+)}
+
+###Freljord
+
+freljordians_array = [anivia, ashe, braum, gnar, gragas]
+freljordians_array.each{|freljordian| ChampionRegion.create(
+    region_id: freljord.id,
+    champion_id: freljordian.id
+)}
+
+bilgewater_array = [gangplank, graves, illaoi]
+bilgewater_array.each{|champ| ChampionRegion.create(
+    region_id: bilgewater.id,
+    champion_id: champ.id
+)}
+
+demacia_array = [fiora, galio, garen, jarven]
+demacia_array.each{|demacian| ChampionRegion.create(
+    region_id: demacia.id,
+    champion_id: demacian.id
+)}
+
+bandle_array = [corki]
+bandle_array.each{|bandle| ChampionRegion.create(
+    region_id: bandle_city.id,
+    champion_id: bandle.id
+)}
+
+noxus_array = [cassiopeia, darius, draven]
+noxus_array.each{|nox| ChampionRegion.create(
+    region_id:noxus.id,
+    champion_id:nox.id
+)}
+
+piltover_array = [caitlyn ,camille, ezreal, heimerdinger, jayce]
+piltover_array.each{|pilt| ChampionRegion.create(
+    region_id: piltover.id,
+    champion_id:pilt.id
+)}
+
+zaun_array =[blitzcrank, dr_mundo,ekko, janna, jinx]
+zaun_array.each{|zaun_champs| ChampionRegion.create(
+    region_id: zaun.id,
+    champion_id:zaun_champs.id
+)}
+
+shurima_array = [amumu, azir]
+shurima_array.each{|shuriman| ChampionRegion.create(
+    region_id: shurima.id,
+    champion_id: shuriman.id
+)}
+
+shadows_array=[elise, hecarim, kalista]
+shadows_array.each{|shadow| ChampionRegion.create(
+    region_id:shadow_isles.id,
+    champion_id:shadow.id
+)}
