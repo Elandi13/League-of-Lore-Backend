@@ -222,7 +222,7 @@ corki = Champion.create(
     image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
     faction: "Bandle City",
     clip: "https://www.youtube.com/embed/ABYix52iBj0",
-    background:"https://static.wikia.nocookie.net/leaguefactions/images/c/c8/Bandle_city.jpg/revision/latest/scale-to-width-down/340?cb=20160802212004"
+    background:"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg"
 )
 
 darius = Champion.create(
@@ -525,6 +525,156 @@ kalista = Champion.create(
     background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/shadow-isles_splash.jpg"
 )
 
+karma = Champion.create(
+    name: "Karma",
+    title: "The Enlightened One",
+    bio: "No mortal exemplifies the spiritual traditions of Ionia more than Karma. She is the living embodiment of an ancient soul reincarnated countless times, carrying all her accumulated memories into each new life, and blessed with power that few can comprehend. She has done her best to guide her people in recent times of crisis, though she knows that peace and harmony may come only at a considerable cost—both to her, and to the land she holds most dear.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/lWIj3IRz8DI",
+    background: "https://3.bp.blogspot.com/-0bWld6yyAlI/WsI_ztESdvI/AAAAAAAA8fw/WCxT2s5V9UghguP8IKA5NlNcwfTAmmm7gCLcBGAs/s1600/1.jpg"
+)
+
+karthus = Champion.create(
+    name: "Karthus",
+    title: "The DeathSinger",
+    bio: "The harbinger of oblivion, Karthus is an undying spirit whose haunting songs are a prelude to the horror of his nightmarish appearance. The living fear the eternity of undeath, but Karthus sees only beauty and purity in its embrace, a perfect union of life and death. When Karthus emerges from the Shadow Isles, it is to bring the joy of death to mortals, an apostle of the unliving.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
+    faction: "Shadow Isles",
+    clip: "https://www.youtube.com/embed/zSKw3m7JGvg",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/shadow-isles_splash.jpg"
+)
+
+kassadin = Champion.create(
+    name: "Kassadin",
+    title: "The Void Walker",
+    bio: "Cutting a burning swath through the darkest places of the world, Kassadin knows his days are numbered. A widely traveled Shuriman guide and adventurer, he had chosen to raise a family among the peaceful southern tribes—until the day his village was consumed by the Void. He vowed vengeance, combining a number of arcane artifacts and forbidden technologies for the struggle ahead. Finally, Kassadin set out for the wastelands of Icathia, ready to face any monstrous Void-construct in his search for their self-proclaimed prophet, Malzahar.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg",
+    faction: "The Void",
+    clip: "https://www.youtube.com/embed/WiIrMY1Nwrw",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/void-an-unknowable-power.jpg"
+)
+
+katarina = Champion.create(
+    name: "Katarina",
+    title: "The Sinister Blade",
+    bio: "Decisive in judgment and lethal in combat, Katarina is a Noxian assassin of the highest caliber. Eldest daughter to the legendary General Du Couteau, she made her talents known with swift kills against unsuspecting enemies. Her fiery ambition has driven her to pursue heavily-guarded targets, even at the risk of endangering her allies—but no matter the mission, Katarina will not hesitate to execute her duty amid a whirlwind of serrated daggers.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
+    faction: "Noxus",
+    clip: "https://www.youtube.com/embed/Kxd_Md9jbi0",
+    background:"https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/noxus_splash.jpg"
+)
+
+kayle = Champion.create(
+    name: "Kayle",
+    title: "The Righteous",
+    bio: "Born to a Targonian Aspect at the height of the Rune Wars, Kayle honored her mother's legacy by fighting for justice on wings of divine flame. She and her twin sister Morgana were the protectors of Demacia for many years—until Kayle became disillusioned with the repeated failings of mortals, and abandoned this realm altogether. Still, legends are told of her punishing the unjust with her fiery swords, and many hope that she will one day return…",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg",
+    faction: "Demacia",
+    clip: "https://www.youtube.com/embed/GV074SIfNhA",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/demacia_splash.jpg"
+)
+
+kayn = Champion.create(
+    name: "Kayn",
+    title: "THe Shadow Reaper",
+    bio: "A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny—to one day lead the Order of Shadow into a new era of Ionian supremacy. He wields the sentient darkin weapon Rhaast, undeterred by its creeping corruption of his body and mind. There are only two possible outcomes: either Kayn bends the weapon to his will... or the malevolent blade consumes him completely, paving the way for the destruction of all Runeterra.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/pPaauwI6G5s",
+    background: "https://3.bp.blogspot.com/-0bWld6yyAlI/WsI_ztESdvI/AAAAAAAA8fw/WCxT2s5V9UghguP8IKA5NlNcwfTAmmm7gCLcBGAs/s1600/1.jpg"
+)
+
+kennen = Champion.create(
+    name: "Kennen",
+    title: "The Heart of The Tempest",
+    bio: "More than just the lightning-quick enforcer of Ionian balance, Kennen is the only yordle member of the Kinkou. Despite his small, furry stature, he is eager to take on any threat with a whirling storm of shuriken and boundless enthusiasm. Alongside his master Shen, Kennen patrols the spirit realm, employing devastating electrical energy to strike down his enemies.",
+    image:"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/ZmYVifYPFsY",
+    background: "https://3.bp.blogspot.com/-0bWld6yyAlI/WsI_ztESdvI/AAAAAAAA8fw/WCxT2s5V9UghguP8IKA5NlNcwfTAmmm7gCLcBGAs/s1600/1.jpg"
+)
+
+kha_zix = Champion.create(
+    name: "Kha'Zix",
+    title: "The VoidReaver",
+    bio: "The Void grows, and the Void adapts—in none of its myriad spawn are these truths more apparent than Kha'Zix. Evolution drives the core of this mutating horror, born to survive and to slay the strong. Where it struggles to do so, it grows new, more effective ways to counter and kill its prey. Initially a mindless beast, Kha'Zix's intelligence has developed as much as its form. Now, the creature plans out its hunts, and even utilizes the visceral terror it engenders in its victims.",
+    image:"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg",
+    faction: "The Void",
+    clip: "https://www.youtube.com/embed/jKLK9zFiVII",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/void-an-unknowable-power.jpg"
+)
+
+kindred = Champion.create(
+    name: "Kindred",
+    title: "The Eternal Hunters",
+    bio: "Separate, but never parted, Kindred represents the twin essences of death. Lamb's bow offers a swift release from the mortal realm for those who accept their fate. Wolf hunts down those who run from their end, delivering violent finality within his crushing jaws. Though interpretations of Kindred's nature vary across Runeterra, every mortal must choose the true face of their death.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg",
+    faction: "Runeterra",
+    clip: "https://www.youtube.com/embed/h0Pwn7G-eLE",
+    background: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg"
+)
+
+kled = Champion.create(
+    name: "Kled",
+    title: "The Cantankerous",
+    bio: "A warrior as fearless as he is ornery, the yordle Kled embodies the furious bravado of Noxus. He is an icon beloved by the empire's soldiers, distrusted by its officers, and loathed by the nobility. Many claim Kled has fought in every campaign the legions have waged, has “acquired” every military title, and has never once backed down from a fight. Though the truth of the matter is often questionable, one part of his legend is undeniable: Charging into battle on his un-trusty steed, Skaarl, Kled fights to protect what's his… and to take whatever he can get.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg",
+    faction: "Noxus",
+    clip: "https://www.youtube.com/embed/Pz145kVa-4w",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/noxus_splash.jpg"
+)
+
+kog_maw = Champion.create(
+    name: "Kog'Maw",
+    title: "The Mouth of The Abyss",
+    bio: "Belched forth from a rotting Void incursion deep in the wastelands of Icathia, Kog'Maw is an inquisitive yet putrid creature with a caustic, gaping mouth. This particular Void-spawn needs to gnaw and drool on anything within reach to truly understand it. Though not inherently evil, Kog'Maw's beguiling naiveté is dangerous, as it often precedes a feeding frenzy—not for sustenance, but to satisfy its unending curiosity.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
+    faction: "The Void",
+    clip: "https://www.youtube.com/embed/_uZ1ltl-qPM",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/void-an-unknowable-power.jpg"
+)
+
+leblanc = Champion.create(
+    name: "Leblanc",
+    title: "The Deceiver",
+    bio: "Mysterious even to other members of the Black Rose cabal, LeBlanc is but one of many names for a pale woman who has manipulated people and events since the earliest days of Noxus. Using her magic to mirror herself, the sorceress can appear to anyone, anywhere, and even be in many places at once. Always plotting just out of sight, LeBlanc's true motives are as inscrutable as her shifting identity.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
+    faction: "Noxus",
+    clip: "https://www.youtube.com/embed/f1Y34gztQ4w",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/noxus_splash.jpg"
+)
+
+lee_sin = Champion.create(
+    name: "Lee Sin",
+    title: "The Blind Monk",
+    bio: "A master of Ionia's ancient martial arts, Lee Sin is a principled fighter who channels the essence of the dragon spirit to face any challenge. Though he lost his sight many years ago, the warrior-monk has devoted his life to protecting his homeland against any who would dare upset its sacred balance. Enemies who underestimate his meditative demeanor will endure his fabled burning fists and blazing roundhouse kicks.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/e6SleHuJjLo",
+    background: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/demacia_splash.jpg"
+)
+
+leona = Champion.create(
+    name: "Leona",
+    title: "The Radiant Dawn",
+    bio: "Imbued with the fire of the sun, Leona is a holy warrior of the Solari who defends Mount Targon with her Zenith Blade and the Shield of Daybreak. Her skin shimmers with starfire while her eyes burn with the power of the celestial Aspect within her. Armored in gold and bearing a terrible burden of ancient knowledge, Leona brings enlightenment to some, death to others.",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg",
+    faction: "Targon",
+    clip: "https://www.youtube.com/embed/oViu5Pv_wwY",
+    background: "https://i.pinimg.com/originals/da/ba/c1/dabac192ea77e56e437ce0cbb171e4ee.jpg"
+)
+
+lillia = Champion.create(
+    name: "Lillia",
+    title: "The Bashful Bloom",
+    bio: "Intensely shy, the fae fawn Lillia skittishly wanders Ionia's forests. Hiding just out of sight of mortals—whose mysterious natures have long captivated, but intimidated, her—Lillia hopes to discover why their dreams no longer reach the ancient Dreaming Tree. She now travels Ionia with a magical branch in hand, in an effort to find people's unrealized dreams. Only then can Lillia herself bloom and help others untangle their fears to find the sparkle within. Eep!",
+    image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg",
+    faction: "Ionia",
+    clip: "https://www.youtube.com/embed/lJqGoqNXuGo",
+    background:"https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/demacia_splash.jpg"
+)
+
 ####Regions 
 
 
@@ -700,14 +850,14 @@ story2 = UserStory.create(
 ###ChampionRegions 
 
 ###Ionia
-ionian_array = [ahri, akali, irelia, ivern, jhin]
+ionian_array = [ahri, akali, irelia, ivern, jhin, karma, kayn, kennen, lee_sin]
 ionian_array.each{|ionian| ChampionRegion.create(
     region_id: ionia.id,
     champion_id: ionian.id
 )}
 
 ###Runeterra
-runterrans_array =[aatrox, alistar, annie, aurelion_sol, bard, evelynn, fiddlesticks, fizz, jax]
+runterrans_array =[aatrox, alistar, annie, aurelion_sol, bard, evelynn, fiddlesticks, fizz, jax, kindred]
 runterrans_array.each{|runeterran| ChampionRegion.create(
     region_id: runeterra.id,
     champion_id: runeterran.id
@@ -727,7 +877,7 @@ bilgewater_array.each{|champ| ChampionRegion.create(
     champion_id: champ.id
 )}
 
-demacia_array = [fiora, galio, garen, jarven]
+demacia_array = [fiora, galio, garen, jarven, kayle]
 demacia_array.each{|demacian| ChampionRegion.create(
     region_id: demacia.id,
     champion_id: demacian.id
@@ -739,7 +889,7 @@ bandle_array.each{|bandle| ChampionRegion.create(
     champion_id: bandle.id
 )}
 
-noxus_array = [cassiopeia, darius, draven]
+noxus_array = [cassiopeia, darius, draven, katarina, kled, leblanc]
 noxus_array.each{|nox| ChampionRegion.create(
     region_id:noxus.id,
     champion_id:nox.id
@@ -763,8 +913,14 @@ shurima_array.each{|shuriman| ChampionRegion.create(
     champion_id: shuriman.id
 )}
 
-shadows_array=[elise, hecarim, kalista]
+shadows_array=[elise, hecarim, kalista, karthus]
 shadows_array.each{|shadow| ChampionRegion.create(
     region_id:shadow_isles.id,
     champion_id:shadow.id
+)}
+
+void_array=[cho_gath, kai, kassadin, kha_zix, kog_maw]
+void_array.each{|v| ChampionRegion.create(
+    region_id: the_void.id,
+    champion_id: v.id
 )}
