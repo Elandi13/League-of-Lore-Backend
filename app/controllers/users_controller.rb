@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
-    def index
-        users = User.all
-        render json: users
+    def login
+        user = User.first
+        render json: user
     end
 
-    def show 
-        user = User.all
+    def show
+        first_user = User.first
         
-        render json: user
+        render json: first_user
     end 
 
     
