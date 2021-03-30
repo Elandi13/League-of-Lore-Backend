@@ -1569,7 +1569,7 @@ zyra = Champion.create(
 
 ionia = Region.create(
     name: "Ionia",
-    image:"https://3.bp.blogspot.com/-0bWld6yyAlI/WsI_ztESdvI/AAAAAAAA8fw/WCxT2s5V9UghguP8IKA5NlNcwfTAmmm7gCLcBGAs/s1600/1.jpg",
+    image:"https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/ionia-01.jpg",
     summary: "Surrounded by treacherous seas, Ionia is composed of a number of allied provinces scattered across a massive archipelago, known to many as the First Lands. Since Ionian culture has long been shaped by the pursuit of balance in all things, the border between the material and spirit realms tends to be more permeable here, especially in the wild forests and mountains.
 
     Although these lands’ enchantments can be fickle, its creatures dangerous and fae, for many centuries most Ionians led lives of plenty. The warrior monasteries, provincial militias—and even Ionia itself—had been enough to protect them.
@@ -1579,7 +1579,7 @@ ionia = Region.create(
     Now, Ionia exists in an uneasy peace. Different reactions to the war have divided the region—some groups, such as the Shojin monks or the Kinkou, seek a return to isolationist pacifism, and pastoral traditions. Other more radical factions, such as the Navori Brotherhood and the Order of Shadow, demand a militarization of the land’s magic, to create a single, unified nation that can take vengeance on Noxus.
     
     The fate of Ionia hangs in a delicate balance that few are willing to overturn, but all can feel shifting uneasily beneath their feet.",
-    background: "https://thumbs.gfycat.com/QuerulousPositiveLaughingthrush-max-1mb.gif"
+    background: "https://www.youtube.com/embed/u9fFG4ZLp9Y" 
 )
 
 bandle_city = Region.create(
@@ -1589,7 +1589,7 @@ bandle_city = Region.create(
     In Bandle City, it is said that every sensation is heightened for non-yordles. Colors are brighter. Food and drink intoxicates the senses for years and, once tasted, will never be forgotten. The sunlight is eternally golden, the waters crystal clear, and every harvest brings a fruitful bounty. Perhaps some of these claims are true, or maybe none—for no two taletellers ever seem to agree on what they actually saw.
     
     Only one thing is known for certain, and that is the timeless quality of Bandle City and its inhabitants. This might explain why those mortals who find their way back often appear to have aged tremendously, while many more never return at all.",
-    background: "https://64.media.tumblr.com/7e452c5a75ac4530dbd4f9e139c575b0/tumblr_p201tvxg0u1tltr42o1_540.gifv"
+    background: "https://www.youtube.com/embed/8QkVYl4r42U"
 )
 
 bilgewater = Region.create(
@@ -1600,7 +1600,7 @@ bilgewater = Region.create(
     While incredibly dangerous, Bilgewater is ripe with opportunity, free from the shackles of formal government and trade regulation. If you have the coin, almost anything can be purchased here, from outlawed hextech to the favor of local crime lords.
     
     With the recent removal of the last “reaver king” of Bilgewater, the city has entered a period of transition, while the most prominent captains try to agree on its future. But as long as there are seaworthy ships and crews to sail them, Bilgewater is likely to remain one of the most colorful and well-connected places in Runeterra.",
-    background:"https://thumbs.gfycat.com/DemandingVengefulAmericanmarten-max-1mb.gif"
+    background:"https://www.youtube.com/embed/lbJhZW-iN0s"
 )
 
 demacia = Region.create(
@@ -1617,7 +1617,7 @@ demacia = Region.create(
     Those who dwell beyond the heavily guarded borders are increasingly viewed with suspicion, and many former allies have begun to look elsewhere for protection, in these uncertain times. Some dare to whisper that the golden age of Demacia has passed, and unless its people are willing to adapt to a changing world—something many believe they are simply incapable of doing—the kingdom’s decline may be inevitable.
     
     And all the petricite in the land will not protect Demacia from itself.",
-    background: "https://thumbs.gfycat.com/AcidicWebbedCowbird-max-1mb.gif"
+    background: "https://www.youtube.com/embed/oKt58b7AwJc"
 )
 
 ixtal = Region.create(
@@ -1628,7 +1628,7 @@ ixtal = Region.create(
     But the mages of Ixtal survived the Void, and later the Darkin, by distancing themselves from their neighbors, drawing the wilderness around them like a shield. While much had already been lost, they were committed to the preservation of what little remained…
     
     Now, secluded deep in the jungle for thousands of years, the sophisticated arcology-city of Ixaocan remains mostly free of outside influence. Having witnessed from afar the ruination of the Blessed Isles and the Rune Wars that followed, the Ixtali view all the other factions of Runeterra as upstarts and pretenders, and use their powerful magic to keep any intruders at bay.",
-    background: "https://i.pinimg.com/originals/c6/0b/ad/c60badafbfa5bf52b9a4b26d693b0170.png"
+    background: "https://www.youtube.com/embed/Kr4qs20ceSY"
 )
 
 noxus = Region.create( 
@@ -1641,14 +1641,14 @@ noxus = Region.create(
     Anyone can rise to a position of power and respect within Noxus if they display the necessary aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to wield magic are held in particularly high esteem, and are actively sought out in order that their special talents may be honed and best harnessed for the benefit of the empire.
     
     But in spite of this meritocratic ideal, the old noble houses still wield considerable power… and some fear that the greatest threat to Noxus comes not from its enemies, but from within.",
-    background:"https://thumbs.gfycat.com/BareWillingBergerpicard-max-1mb.gif"
+    background:"https://www.youtube.com/embed/jlPP9a-zC2g"
 )
 
 piltover = Region.create(
     name: "Piltover",
     image: "https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/piltover_splash.jpg",
     summary: "Piltover is a thriving, progressive city whose power and influence is on the rise. It is Valoran’s cultural center, where art, craftsmanship, trade and innovation walk hand in hand. Its power comes not through military might, but the engines of commerce and forward thinking. Situated on the cliffs above the district of Zaun and overlooking the ocean, fleets of ships pass through its titanic sea-gates, bringing goods from all over the world. The wealth this generates has given rise to an unprecedented boom in the city’s growth. Piltover has - and still is - reinventing itself as a city where fortunes can be made and dreams can be lived. Burgeoning merchant clans fund development in the most incredible endeavors: grand artistic follies, esoteric hextech research, and architectural monuments to their power. With ever more inventors delving into the emergent lore of hextech, Piltover has become a lodestone for the most skilled craftsmen the world over.",
-    background: "https://thumbs.gfycat.com/SomberAgonizingHydatidtapeworm-size_restricted.gif"
+    background: "https://www.youtube.com/embed/qCVLRh1y96M"
 )
 
 shadow_isles = Region.create(
@@ -1659,7 +1659,7 @@ shadow_isles = Region.create(
     Now, a malevolent Black Mist permanently shrouds the Isles, and the earth itself is tainted by dark sorcery. Mortals who dare to venture to these dismal shores will slowly have their life force stolen away from them, which in turn attracts the insatiable, restless spirits of the dead.
     
     Those who perish within the Mist are condemned to haunt this nightmarish place for eternity—worse still, the power of the Shadow Isles appears to wax stronger with every passing year, allowing the most powerful specters to roam farther and farther across Runeterra.",
-    background: "https://64.media.tumblr.com/0fceaaaeac64ac6888bbc3bbf14fa313/4d302f12a336157b-71/s540x810/bd7159352338ce98b71e19648f5ae0a47a4e3e08.gifv"
+    background: "https://www.youtube.com/embed/3yxNUbYZEWU"
 )
 
 shurima = Region.create(
@@ -1672,14 +1672,14 @@ shurima = Region.create(
     However, after several thousand years of growth and prosperity, the failed Ascension of Shurima’s last emperor left the capital in ruins, and tales of the empire’s former glory became little more than myth. Now, most of the nomadic inhabitants of Shurima’s deserts eke out a meager existence from the unforgiving land. Some have built small outposts to defend the few oases, while others delve into long lost catacombs in search of the untold riches that must surely lay buried there. There are also those who live as mercenaries, taking coin for their service before disappearing back into the lawless wastelands.
     
     Still, a handful dare to dream of a return to the old ways. Indeed, more recently the tribes have been stirred by whispers from the heart of the desert—that their emperor Azir has returned, to lead them into a new, wondrous age.",
-    background: "https://thumbs.gfycat.com/AcademicCheerfulDragonfly-size_restricted.gif"
+    background: "https://www.youtube.com/embed/JKnM6Hh5gOg"
 )
 
 targon = Region.create(
     name: "Targon",
     image: "https://i.pinimg.com/originals/da/ba/c1/dabac192ea77e56e437ce0cbb171e4ee.jpg",
     summary: "Mount Targon is the mightiest peak in Runeterra, a towering peak of sun-baked rock amid a range of summits unmatched in scale anywhere else in the world. Located far from civilization, Mount Targon is utterly remote and all but impossible to reach save by the most determined seeker. Many legends cling to Mount Targon, and, like any place of myth, it is a beacon to dreamers, madmen and questors of adventure. Some of these brave souls attempt to scale the impossible mountain, perhaps seeking wisdom or enlightenment, perhaps chasing glory or some soul-deep yearning to witness its summit. The ascent is all but impossible, and those hardy few who somehow survive to reach the top almost never speak of what they have seen. Some return with a haunted, empty look in their eyes, others changed beyond all recognition, imbued by an Aspect of unearthly, inhuman power with a destiny few mortals can comprehend.",
-    background: "https://i.makeagif.com/media/7-30-2019/9xJ5t-.gif"
+    background: "https://www.youtube.com/embed/6UuLD-0lndY"
 )
 
 freljord = Region.create(
@@ -1692,7 +1692,7 @@ freljord = Region.create(
     Despite the best efforts of the Frostguard, myths and legends still endure of the old gods, the enigmatic yetis, and restless spirit walker shamans. The raiders of the Winter’s Claw range further with each passing year, harrying the borders of Demacia to the south, and the frontiers of Noxus to the east. Finally, seeking a more peaceful future, the fractious independent tribes and clans have begun to offer their allegiance to Ashe, young queen of the Avarosans.
     
     Even so, the portents are grim. War is surely returning to the Freljord, and none can hope to escape it.",
-    background:"https://thumbs.gfycat.com/AdeptHideousCanine-size_restricted.gif"
+    background:"https://www.youtube.com/embed/BTnVvmqB9fY"
 )
 
 the_void = Region.create(
@@ -1701,21 +1701,21 @@ the_void = Region.create(
     summary: "Screaming into existence with the birth of the universe, the Void is a manifestation of the unknowable nothingness that lies beyond. It is a force of insatiable hunger, waiting through the eons until its masters, the mysterious Watchers, mark the final time of undoing.
 
     To be a mortal touched by this power is to suffer an agonizing glimpse of eternal unreality, enough to shatter even the strongest mind. Denizens of the Void realm itself are construct-creatures, often of only limited sentience, but tasked with a singular purpose—to usher in total oblivion across Runeterra.",
-    background: "https://thumbs.gfycat.com/UnsightlyInnocentBluebottle-size_restricted.gif"
+    background: "https://www.youtube.com/embed/vzHrjOMfHPY"
 )
 
 zaun = Region.create(
     name: "Zaun",
     image: "https://lolstatic-a.akamaihd.net/frontpage/apps/prod/piltover/en_US/0d65273e55685b53b82f4f0ead52fc167a27f911/assets/img/share/zaun_1200x630.jpg",
     summary:"Zaun is a large, undercity district, lying in the deep canyons and valleys threading Piltover. What light reaches below is filtered through fumes leaking from the tangles of corroded pipework and reflected from the stained glass of its industrial architecture. Zaun and Piltover were once united, but are now separate, yet symbiotic societies. Though it exists in perpetual smogged twilight, Zaun thrives, its people vibrant and its culture rich. Piltover’s wealth has allowed Zaun to develop in tandem; a dark mirror of the city above. Many of the goods coming to Piltover find their way into Zaun’s black markets, and hextech inventors who find the restrictions placed upon them in the city above too restrictive often find their dangerous researches welcomed in Zaun. Unfettered development of volatile technologies and reckless industry has rendered whole swathes of Zaun polluted and dangerous. Streams of toxic runoff stagnate in the city’s lower reaches, but even here people find a way to exist and prosper.",
-    background:"https://steamuserimages-a.akamaihd.net/ugc/787480374921350334/DFF4DD837C7C3F054EACFDD008CE200AA8987531/"
+    background:"https://www.youtube.com/embed/qCVLRh1y96M"
 )
 
 runeterra = Region.create(
     name: "Runeterra",
     image: "https://cdn.vox-cdn.com/thumbor/ILvJLdwMMYglUfQnkp2_cdP3kY0=/0x0:1775x931/1200x800/filters:focal(746x324:1030x608)/cdn.vox-cdn.com/uploads/chorus_image/image/60472511/chrome_2018_07_24_11_40_50.0.jpg",
     summary:"Composed of both the material and spirit realms, Runeterra is all that separates the celestial powers of creation from the abyssal threat of all undoing. This is a magical world unlike any other-inhabited by peoples both fierce and wondrous.",
-    background: "https://i.imgur.com/i0siM4i.gif"
+    background: "https://www.youtube.com/embed/oGnZk-_R0KQ"
 )
 
 
