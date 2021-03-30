@@ -1622,7 +1622,7 @@ demacia = Region.create(
 
 ixtal = Region.create(
     name: "Ixtal",
-    image: "https://universe-meeps.leagueoflegends.com/v1/assets/images/ixtal_splash.jpg",
+    image: "https://pbs.twimg.com/media/D8jJ7mpUcAEBOPS.jpg",
     summary: "Renowned for its mastery of elemental magic, Ixtal was one of the first independent nations to join the Shuriman empire. In truth, Ixtali culture is much older—part of the great westward diaspora that gave rise to civilizations including the Buhru, magnificent Helia, and the ascetics of Targon—and it is likely they played a significant role in the creation of the first Ascended.
 
     But the mages of Ixtal survived the Void, and later the Darkin, by distancing themselves from their neighbors, drawing the wilderness around them like a shield. While much had already been lost, they were committed to the preservation of what little remained…
